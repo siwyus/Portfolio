@@ -9,8 +9,8 @@ import Navbar from "./components/layout/Navbar";
 const App = () => {
   return (
     <Router>
+      <Navbar />
       <div className="App">
-        <Navbar />
         <Switch>
           <Route path="/about">
             <About />

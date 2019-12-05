@@ -1,16 +1,20 @@
 .App {
-  width: 100vw;
   height: 100vh;
-  position: relative;
   /* background-image: url("components/layout/background.jpg");
   background-repeat: no-repeat; 
    background-size: cover; */
   background-color: #323538;
 }
 
+body,
+html {
+  height: 100%;
+}
+
 /* NAVBAR */
 .navbar {
-  font-size: 4vh;
+  background-color: aquamarine;
+  font-size: 3vh;
   width: 100%;
   font-family: Aclonica;
 }
@@ -38,46 +42,39 @@
   text-shadow: 2px 2px 4px #000000;
 }
 
-/* HOME */
-.centerxy {
-  position: absolute;
-  width: 50%;
-  top: 40%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.centerxy img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  padding: 12px;
-  float: right;
-  margin: 0 auto;
-}
-.centerxy h1 {
-  float: left;
-}
-.centerxy h2 {
-  float: left;
+.home {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.title {
+.centered {
   text-align: center;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centered img {
+  margin: 20px;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+}
+.centered h1 {
+  font-size: 4vh;
+}
+.centered h2 {
+  font-size: 3vh;
 }
 
 @media screen and (max-width: 600px) {
   .navbar li {
     display: block;
   }
-}
-@media screen and (max-width: 800px) {
-  .centerxy {
-    text-align: center;
-  }
-  .centerxy img {
-    display: inline;
-    float: none;
+
+  .centered {
+    flex-direction: column-reverse;
   }
 }
 
