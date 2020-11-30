@@ -3,4 +3,4 @@
 
 ## Portfolio Project
 
-I am creating this project to learn more of frontend developing. I want to make this full responsible page with my own CSS.
+I am creating this project to learn more of frontend developing. I'm making this full responsible page with my own CSS.
